@@ -1,0 +1,10 @@
+body {
+  padding: 30px;
+}
+
+#signOutButton, #execute {
+  display: block;
+  width: 120px;
+  height: 36px;
+  margin-top: 10px;
+}

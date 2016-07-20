@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <!-- Cognitoにも同じ「Web Application」タイプのクライアントIDを設定 -->
+    <meta name="google-signin-client_id" content="CLIENT_ID">
+  </head>
+  <body>
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+    <button type="button" class="btn btn-warning" id="signOutButton">Sign out</button>
+    <button type="button" class="btn btn-info" id="execute">Exec Lambda</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aws-sdk/2.4.7/aws-sdk.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
